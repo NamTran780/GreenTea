@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	
+	<link href="css/main.css" rel="stylesheet">
+	
+</head>
+
+<body>
+	
+	
+	<div id="container">	
+	
+		<div id="navbar">
+		
+			<span style="float: left">
+			<img src="images/logo-light.png" width="150px" hspace="150px">
+			</span>
+			
+  		<a href="#home">HOME</a>
+  		<a href="#news">ABOUT</a>
+  		<a href="#contact">SERVICES</a>
+  		<a href="#contact">PROJECT</a>
+  		<a href="#contact">TEAM</a>
+  		<a href="#contact">BLOG</a>
+		<a href="#contact">CONTACT</a>
+</div>
+		
+		
+	<div class="slide">
+		
+		<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/1.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/2.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/3.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+		
+		
+		
+		
+		
+		</div>
+	
+	
+		<div class="tea">
+		
+		
+			<div class="tea_item">
+				
+				<img src="images/services-6.jpg" width="100%">
+				<br>
+				<hr color="#2A6E00">
+				
+				10 things you need to know about black tea<br>Different ways to make premium<br> loose leaf tea <br>Oolong Tea: How to
+			
+			</div>	
+			
+			
+			<div class="tea_item">
+			
+				<img src="images/services-7.jpg" width="100%">
+				<br>
+				<hr color="#2A6E00">
+				
+				10 things you need to know about black tea<br>Different ways to make premium<br> loose leaf tea <br>Oolong Tea: How to
+				
+				
+				
+				
+			</div>
+			
+			
+			<div class="tea_item">
+				
+				
+				<img src="images/services-8.jpg" width="100%">
+				<br>
+				<hr color="#2A6E00">
+				
+				10 things you need to know about black tea<br>Different ways to make premium<br> loose leaf tea <br>Oolong Tea: How to
+			
+			</div>
+		
+		
+		
+		
+		
+		
+		
+		</div>
+		
+
+	<div class="Information">		
+		<div class="Information_Item">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15731.644932808553!2d105.56643873453137!3d9.688617295058236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0e5b363e74e23%3A0x6b9bfd1075a3e5d!2sEarth%20Sculpture%20with%20LED%20Screens%20in%20a%20Roundabout!5e0!3m2!1svi!2s!4v1667397195874!5m2!1svi!2s" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		
+		</div>
+		<div class="Information_Item2">
+			<h2>GET INTOUCH</h2>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John" style="width: 500px; height: 30px; padding: 10px;";><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"style="width: 500px; height: 30px; padding: 10px;"><br>
+	<label for="lname">Email:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"style="width: 500px; height: 30px; padding: 10px;"><br><br>
+ <textarea id="form" name="form" rows="5" cols="70">Ghi vao day</textarea>
+  <br>
+	
+	
+	<input type="radio" id="Male" name="gt" value="Male">
+  <label for="Male">Male</label>
+  <input type="radio" id="Female" name="gt" value="Female">
+  <label for="Female">Female</label><br><br>
+	
+	
+  <input type="submit" value="SEND MESSAGE" style="width: 200px; height: 50px; padding: 5px; background-color: #4DBD37; border-style: none; color: white;font-size: 12px; font-weight:bold;">
+</form> 
+
+		
+		
+		</div>
+		
+		</div>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+}
+</script>	
+	
+	
+	<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+	
+	
+	
+</body>
+</html>
